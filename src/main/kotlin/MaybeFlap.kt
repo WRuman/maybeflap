@@ -72,7 +72,7 @@ object Field: JPanel(), ActionListener {
             lastTime = ts
             ticks += min(diff, 5L)
             val pct = sin(ticks * .01)
-            val fin = ((VERT - height) / (1.0 - -1.0)) * (pct - -1.0)
+            val fin = ((VERT - height) / 2.0) * (pct + 1.0)
             //println(fin)
             y = fin.roundToInt()
         }
